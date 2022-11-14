@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/welcomeActivityBackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white_background">
+
+        <ImageView
+            android:id="@+id/ivlogo"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvappVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ivlogo"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="15dp"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvUsuarioActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvappVersion"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvconnectionstate0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:text="Estado de conexión:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvconnectionstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvconnectionstate0"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvfwversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvconnectionstate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp"
+            android:text=""
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="132dp"
+        android:alpha="0.1"
+        android:background="@drawable/round_corner_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcomeActivityBackgroundLayout"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/round_corner_colorapp"
+        app:itemIconSize="18dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/welcomeActivityBackgroundLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

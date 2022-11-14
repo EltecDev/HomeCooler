@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619623767824",
+    "project_id": "homecooler-d027c",
+    "storage_bucket": "homecooler-d027c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619623767824:android:d4e1ea9b58a26359accf95",
+        "android_client_info": {
+          "package_name": "mx.eltec.homecooler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619623767824-eoa2fsflhbls6goqde683l98hh2eif7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8YeHTx2NdCUVIwqVl9Mh7ZSS8sDRtt2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619623767824-eoa2fsflhbls6goqde683l98hh2eif7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeCooler</string>
+
+    <string name="bottom_menu_item1">Home</string>
+    <string name="bottom_menu_item2">Beacon</string>
+
+    <string name="string_app_restrictions_title">Estatus</string>
+    <string name="string_app_restrictions_description">Estatus</string>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Bienvenido a Home Cooler"
+        android:textColor="@color/azulImbera1"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvsubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtitulo"
+        android:layout_marginTop="35dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Inicia la búsqueda de tu nevera desde el botón de aquí abajo, una vez que obtenga la conexión con él, agregalo y ve a la sección de Home para conectar directamente con este equipo y configurarlo a tus necesidades"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:alpha="0.2"
+        android:layout_below="@+id/tvsubtitulo"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsubtitulo"
+        android:layout_above="@+id/btnIniciarMonitoreo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--
+             handshake
+             -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Handshake"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información básica del equipo:"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvhandshake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Información de Handshake"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnIniciarRanging"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_above="@+id/btnDetenerRanging"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_corner_colorapp"
+        android:text="Iniciar ranging"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnDetenerRanging"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/btnIniciarMonitoreo"
+        android:layout_marginHorizontal="45dp"
+        android:background="@drawable/round_corner_black"
+        android:text="Detener ranging"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnIniciarMonitoreo"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_above="@+id/btnDetenerMonitoreo"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/round_corner_colorapp"
+        android:text="Iniciar búsqueda"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnDetenerMonitoreo"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/round_corner_black"
+        android:text="Detener búsqueda"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
